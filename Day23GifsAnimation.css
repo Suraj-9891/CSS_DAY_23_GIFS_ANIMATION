@@ -1,0 +1,144 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem 0;
+}
+
+h1 {
+    margin: 0;
+}
+
+section#animations {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.animation {
+    width: 100px;
+    height: 100px;
+    margin: 10px auto;
+}
+
+/* 1. Looping Animations */
+.looping {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4);
+    border-radius: 50%;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-50px);
+    }
+}
+
+/* 2. Text-Based Animations */
+.text-animation {
+    font-size: 1.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #333;
+    width: fit-content;
+    animation: typing 3s steps(15, end), blink 0.5s step-end infinite alternate;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+/* 3. Image Sequencing */
+.image-sequence {
+    background: url("https://media0.giphy.com/media/mRI1hW0ZBVUly/giphy.webp?cid=790b7611vltwg2pmik9v11opfxcyei7ke0z2j6k996rjc8py&ep=v1_gifs_search&rid=giphy.webp&ct=g") no-repeat center;
+    background-size: cover;
+}
+
+/* 4. Kinetic Typography */
+.kinetic-typography {
+    font-size: 2rem;
+    font-weight: bold;
+    animation: rotate-text 2s infinite linear;
+}
+
+@keyframes rotate-text {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* 5. Particle Animations */
+.particles {
+    background: url("https://media1.giphy.com/media/IXnygGeB6LPPi/giphy.webp?cid=790b76118fz65g47xhjxqgjqx72joqmlkf9v3e5b2y1g6p2t&ep=v1_gifs_search&rid=giphy.webp&ct=g") no-repeat center;
+    background-size: cover;
+}
+
+/* 6. 3D Animations */
+.three-d {
+    background: linear-gradient(45deg, #8e44ad, #3498db);
+    transform: rotate3d(1, 1, 1, 45deg);
+    animation: spin3d 2s infinite linear;
+}
+
+@keyframes spin3d {
+    from { transform: rotate3d(1, 1, 1, 0deg); }
+    to { transform: rotate3d(1, 1, 1, 360deg); }
+}
+
+/* 7. GIFs with Interactivity */
+.interactive {
+    background: #ff6f61;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.interactive:hover {
+    background: #ff8a73;
+}
+
+/* 8. Data Visualization */
+.data-visualization {
+    background: url("https://media1.giphy.com/media/l2SpTXlLhThF29ai4/200.webp?cid=790b76112akzm8qylanx2emhox95risx932rgxhxu3vz5ops&ep=v1_gifs_search&rid=200.webp&ct=g") no-repeat center;
+    background-size: cover;
+}
+
+/* 9. Emotive Animations */
+.emotive {
+    font-size: 2rem;
+}
+
+/* 10. Abstract Animations */
+.abstract {
+    background: url("https://media3.giphy.com/media/3oz8xus1ykCFgxW2ac/giphy.webp?cid=790b7611p306tbcp5lq0hgy7tjfmeel3fbvyd6ley3d35t1a&ep=v1_gifs_search&rid=giphy.webp&ct=g") no-repeat center;
+    background-size: cover;
+}
